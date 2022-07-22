@@ -30,29 +30,54 @@ class MainActivity : AppCompatActivity() {
                 val totalNots: Double = ortalamaVize + ortalamaFinal
 
                 when (totalNots) {
-                    in 0.0..50.0 -> binding.sonuText.text =
-                        totalNots.toString() + " " + "Notunuz : DD "
+                    in 0.0..50.0 -> {
+                        binding.sonuText.text = totalNots.toString() + " " + "Notunuz : DD "
+                        binding.sonuText.setTextColor(getColor(R.color.Red))
+                    }
+                    in 51.0..64.0 -> {
+                        binding.sonuText.text = totalNots.toString() + " " + "Notunuz : DC "
+                        binding.sonuText.setTextColor(getColor(R.color.Red))
+                    }
 
-                    in 51.0..64.0 -> binding.sonuText.text =
-                        totalNots.toString() + " " + "Notunuz : DC "
+                    in 65.0..69.0 -> {
+                        binding.sonuText.text =
+                            totalNots.toString() + " " + "Notunuz : CD "
+                        binding.sonuText.setTextColor(getColor(R.color.Green))
+                    }
 
-                    in 65.0..69.0 -> binding.sonuText.text =
-                        totalNots.toString() + " " + "Notunuz : CD "
+                    in 70.0..74.0 -> {
+                        binding.sonuText.text =
+                            totalNots.toString() + " " + "Notunuz : CC "
+                        binding.sonuText.setTextColor(getColor(R.color.Green))
+                    }
 
-                    in 70.0..74.0 -> binding.sonuText.text =
-                        totalNots.toString() + " " + "Notunuz : CC "
+                    in 75.0..79.0 -> {
+                        binding.sonuText.text =
+                            totalNots.toString() + " " + "Notunuz : CB "
+                        binding.sonuText.setTextColor(getColor(R.color.Green))
+                    }
 
-                    in 75.0..79.0 -> binding.sonuText.text =
-                        totalNots.toString() + " " + "Notunuz : CB "
+                    in 80.0..84.0 -> {
+                        binding.sonuText.text =
+                            totalNots.toString() + " " + "Notunuz : BB "
+                        binding.sonuText.setTextColor(getColor(R.color.Green))
+                    }
+                    in 85.0..89.0 -> {
+                        binding.sonuText.text =
+                            totalNots.toString() + " " + "Notunuz : BA "
+                        binding.sonuText.setTextColor(getColor(R.color.Green))
+                    }
+                    in 90.0..100.0 -> {
+                        binding.sonuText.text =
+                            totalNots.toString() + " " + "Notunuz : AA "
+                        binding.sonuText.setTextColor(getColor(R.color.Green))
+                    }
 
-                    in 80.0..84.0 -> binding.sonuText.text =
-                        totalNots.toString() + " " + "Notunuz : BB "
-
-                    in 85.0..89.0 -> binding.sonuText.text =
-                        totalNots.toString() + " " + "Notunuz : BA "
-                    in 90.0..100.0 -> binding.sonuText.text =
-                        totalNots.toString() + " " + "Notunuz : AA "
-                    else ->binding.sonuText.text= totalNots.toString() + " " + "Hatalı not girdiniz."
+                    else -> {
+                        binding.sonuText.text =
+                            totalNots.toString() + " " + "Hatalı not girdiniz."
+                        binding.sonuText.setTextColor(getColor(R.color.Green))
+                    }
 
                 }
 
@@ -67,15 +92,3 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-/**
- *
- *
-if (ortalamaVize >= 50) {
-binding.sonuText.text = ortalamaVize.toString() + " " + "Geçerli"
-binding.sonuText.setTextColor(getColor(R.color.Green))
-} else {
-binding.sonuText.text = ortalamaVize.toString() + " " + "Kaldınız"
-binding.sonuText.setTextColor(getColor(R.color.Red))
-}
-
- */
