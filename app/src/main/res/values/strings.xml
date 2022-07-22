@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Not_ortalaması_hesaplama</string>
+
+    <string name="buttonHesapla">Hesapla</string>
+    <string name="SonucText">Sonuç:</string>
+
+    <string name="Vize1">Lütfen  1. Vize notlarini giriniz :</string>
+    <string name="Vize2">Lütfen 2. Vize  notlarini giriniz :</string>
+    <string name="Ağırlık1">Lütfen ağırlık oranını giriniz :</string>
+    <string name="Final">Lütden final notunu giriniz :</string>
+
+
+
+</resources>
